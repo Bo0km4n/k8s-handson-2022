@@ -23,6 +23,6 @@ spec:
         name: echoserver
         args:
         - "-listen=0.0.0.0:8080"
-        - "text=replicatest"
+        - "-text=replicatest"
         ports:
         - containerPort: 8080
