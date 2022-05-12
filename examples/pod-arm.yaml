@@ -1,0 +1,11 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: echo-pod
+spec:
+  containers:
+  - name: echo
+    image: arm64v8/nginx
+    imagePullPolicy: IfNotPresent
+    ports:
+    - containerPort: 80
