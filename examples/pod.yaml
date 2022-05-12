@@ -5,12 +5,7 @@ metadata:
 spec:
   containers:
   - name: echo
-    image: hashicorp/http-echo:0.2.3
+    image: nginx
     imagePullPolicy: IfNotPresent
-    command: 
-    - "/http-echo"
     ports:
-    - containerPort: 8080
-    args:
-    - "-listen=0.0.0.0:8080"
-    - "-text=foo"
+    - containerPort: 80
